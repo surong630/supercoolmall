@@ -24,6 +24,9 @@ export default {
     return {
     }
   },
+  created() {
+    // console.log(this.goods)
+  },
 }
 </script>
 <style scoped>

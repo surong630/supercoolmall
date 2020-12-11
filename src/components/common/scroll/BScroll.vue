@@ -14,6 +14,10 @@ export default {
     probeType:{
       type:Number,
       default: 0
+    },
+    pullingUp:{
+      type:Boolean,
+      default:false
     }
   },
   data(){
@@ -25,21 +29,34 @@ export default {
     this.scroll = new BScroll(this.$refs.wrap,{
       click: true,
       probeType:this.probeType,
-      pullUpLoad:true
+      pullUpLoad:this.pullingUp
     })
-    this.scroll.on('scroll',(position) => {
+    if(this.probeType ===2 || this.probeType ===3) {
+      this.scroll.on('scroll',(position) => {
       this.$emit('scroll',position)
     })
-    this.scroll.on('pullingUp',() => {
-      this.$emit('pullingUp')
+    }
+      this.scroll.on('pullingUp',() => {
+        this.$emit('pullingUp')
     })
+
+
+
+    //onsole.log(this.scroll)
   },
   methods: {
     scrollTo(x,y,time=500){
-      this.scroll.scrollTo(x,y,time)
+     this.scroll && this.scroll.scrollTo(x,y,time)
     },
     finishPullUp(){
-      this.scroll.finishPullUp()
+      this.scroll && this.scroll.finishPullUp()
+    },
+    refresh(){
+      // console.log('----')
+     this.scroll && this.scroll.refresh()
+    },
+    getScrollY() {
+      return this.scroll? this.scroll.y : 0
     }
   },
 }

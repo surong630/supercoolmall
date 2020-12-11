@@ -1,143 +1,139 @@
 <template>
-    <div  class="wrapper">
-       <ul>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-    <li>我是</li>
-  
-    </ul>
-    </div>
-   
-    
-    
+   <scroll class="content" :probeType='3' :pullingUp='true' @scroll='scroll' @pullingUp='pulling' ref="scroll">
+      <ul>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+        <li>哈哈</li>
+      </ul>
+      <button @click="toto">还好</button>
+   </scroll>
 
 </template>
 
 <script>
-import BScroll from 'better-scroll'
+import scroll from 'components/common/scroll/BScroll'
 export default {
   components:{
+    scroll
   },
   props:{},
   data(){
     return {
-      scroll: null
     }
   },
   mounted() {
-    this.scroll = new BScroll(document.querySelector('.wrapper'),{
-      probeType:3,
-      pullUpLoad:true
-    })
-    this.scroll.on('pullingUp',() =>{
-      console.log('上拉加载')
-    })
-    this.scroll.on('scroll',(position) => {
-      console.log(position)
-    })
+  },
+  methods: {
+    scroll(position){
+    },
+    pulling(){
+      console.log('上垃圾');
+    },
+    toto(){
+      this.$refs.scroll.scrollTo(0,0)
+    }
   },
 }
 </script>
 <style scoped>
-.wrapper{
-  background-color: red;
+.content{
   height: 150px;
   overflow: hidden;
 }
